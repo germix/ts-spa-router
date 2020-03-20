@@ -1,4 +1,5 @@
 import Route from "./Route";
+import RouteArguments from "./RouteArguments";
 
 /**
  * @author Germán Martínez
@@ -11,6 +12,6 @@ interface RouterData
     }[]
     ,
     default: Route;
-    postRoute(path): void;
+    postRoute(args: RouteArguments): void;
 }
 export default RouterData;
